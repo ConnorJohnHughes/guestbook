@@ -4,98 +4,96 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Guest Book</title>
-    <link rel="stylesheet" href="/public/styles/styles.css">
-    <script src="/public/js/guestbook.js" defer ></script>
+    <link rel="stylesheet" href="/styles/styles.css">
+    <script src="/public/js/guestbook.js" defer></script>
+    <link rel="icon" type="image/png" href="/images/illustration-of-book-icon-free-vector.jpg">
 </head>
 <body>
     <main>
         <form id="guestbook-form">
-            <h1> Contact Form</h1>
+            <h1>Contact Form</h1>
+
             <fieldset id="contact-info">
                 <div id="contact-div">
-                    <div id="contact-group">
-                        <label for="fName" >First Name</label>
+                    <div class="contact-group">
+                        <label for="fName">First Name</label>
                         <input type="text" id="fName" name="fName">
                     </div>
 
-                    <div id="contact-group">
-                        <label for="lName" >Last Name</label>
-                        <input type="text" id="lName"  name="lName">
+                    <div class="contact-group">
+                        <label for="lName">Last Name</label>
+                        <input type="text" id="lName" name="lName">
                     </div>
 
-                    <div id="contact-group">
-                        <label for="job" >Job Title </label>
-                        <input type="text"  id="job" name="job">
+                    <div class="contact-group">
+                        <label for="job">Job Title</label>
+                        <input type="text" id="job" name="job">
                     </div>
 
-                    <div id="contact-group">
-                        <label for="company" >Company</label>
+                    <div class="contact-group">
+                        <label for="company">Company</label>
                         <input type="text" id="company" name="company">
                     </div>
 
-                    <div id="contact-group">
-                        <label for="linkedin" >Linkedin URL</label>
+                    <div class="contact-group">
+                        <label for="linkedin">Linkedin URL</label>
                         <input type="url" id="linkedin" name="linkedin">
                     </div>
 
-
-                    <div id="contact-group">
-                        <label for="email" >Email Address</label>
+                    <div class="contact-group">
+                        <label for="email">Email Address</label>
                         <input type="email" id="email" name="email">
                     </div>
-                
-            </div>
+                </div>
             </fieldset>
 
             <fieldset id="meet-info">
                 <div id="meet-div">
-                    <div id="meet-group">
-                        <label for="meet" >How did we meet?</label>
+                    <div class="meet-group">
+                        <label for="meet-dropdown">How did we meet?</label>
                         <select name="meet-dropdown" id="meet-dropdown">
-                            <option value="none">Please Select </option>
+                            <option value="none">Please Select</option>
                             <option value="school">At School</option>
                             <option value="linkedin">Linkedin</option>
-                            <option value="passingBy"> Passsing by</option>
+                            <option value="passingBy">Passing by</option>
                         </select>
                     </div>
 
-                    <div id="meet-group">
-                        <label for="other">Other(Please specify)</label>
+                    <div class="meet-group">
+                        <label for="other">Other (Please specify)</label>
                         <input type="text" id="other" name="other">
                     </div>
                 </div>
             </fieldset>
 
             <fieldset id="message-area">
-
-                <label for="message" >Message </label>
-                    <textarea id="message-textarea" name="message-textarea"></textarea>
-
+                <label for="message-textarea">Message</label>
+                <textarea id="message-textarea" name="message-textarea"></textarea>
             </fieldset>
 
-            <fieldset id="mailing-list">
+            <fieldset id="mailing-list-section">
                 <div id="mailingDiv">
-                    <div id="mail-group">
+                    <div class="mail-group">
                         <input type="checkbox" id="mailing-list" name="mailing-list">
-                        <label for="mailing-list" >Please add me to your mailing list</label>
+                        <label for="mailing-list">Please add me to your mailing list</label>
                     </div>
 
-                    <div id="mail-group">
-                        <label for="email-format" >Choose an email format: </label>
+                    <div class="mail-group">
+                        <p>Choose an email format:</p>
 
-                        <input type="radio" id="html-radio" name="html-radio">
-                        <label for="html-radio" >HTML </label>
-                        
-                        <input type="radio" id="text-radio" name="text-radio">
-                        <label for="text-radio" >Text</label>
+                        <input type="radio" id="html-radio" name="email-format" value="html">
+                        <label for="html-radio">HTML</label>
+
+                        <input type="radio" id="text-radio" name="email-format" value="text">
+                        <label for="text-radio">Text</label>
                     </div>
                 </div>
-
             </fieldset>
 
             <button id="submit" name="submit">Submit</button>
         </form>
+
+        <a href="https://github.com/ConnorJohnHughes/guestbook.git">Github</a>
     </main>
-    
 </body>
 </html>

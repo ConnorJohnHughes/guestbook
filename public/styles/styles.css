@@ -1,76 +1,95 @@
-body{
+body {
     background-color: lightgray;
     display: flex;
     justify-content: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: 700;
 }
-main{
+
+main {
     background-color: white;
     width: 50%;
-    margin: 5rem 5rem 0 5rem ;
+    margin: 5rem 5rem 0 5rem;
     border-radius: 1%;
     padding: 2rem;
     box-shadow: .5rem .5rem gray;
-
 }
-h1{
+
+h1 {
     text-align: center;
 }
-#contact-group{
+
+.contact-group {
     display: flex;
     flex-direction: column;
 }
-#contact-div{
-  display: grid;
-  grid-template-columns: repeat(3, minmax(auto, auto));
-  gap: 15px;
+
+#contact-div {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(auto, auto));
+    gap: 15px;
 }
-#meet-div label{
+
+#meet-div label {
     display: block;
 }
-#meet-div{
+
+#meet-div {
     display: flex;
 }
-#meet-group{
+
+.meet-group {
     width: 50%;
 }
-fieldset{
+
+fieldset {
     border: none;
     margin: 2rem;
 }
-select{
+
+select {
     width: 95%;
     border-radius: .2rem;
 }
-#other{
+
+#other {
     width: 95%;
 }
-input{
+
+input {
     border-radius: .2rem;
     border-width: .1rem;
 }
-textarea{
+
+textarea {
     border-radius: .2rem;
-    width:98%;
+    width: 98%;
     height: 100px;
 }
-#message-area label{
+
+#message-area label {
     display: block;
 }
-#mailingDiv{
+
+#mailingDiv {
     display: flex;
     flex-direction: column;
     line-height: 2rem;
 }
-button{
+
+.mail-group {
+    margin-bottom: 1rem;
+}
+
+button {
     margin-left: 3rem;
     background-color: rgb(50, 150, 50);
     border-radius: .2rem;
     color: white;
-    padding: .3rem 1rem ;
-    border:none;
+    padding: .3rem 1rem;
+    border: none;
 }
-
-
-
+a{
+    display: flex;
+    justify-self: center;
+}
