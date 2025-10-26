@@ -41,6 +41,10 @@ h1 {
 .meet-group {
     width: 50%;
 }
+#other-group{
+    width: 50%;
+    display: none;
+}
 
 fieldset {
     border: none;
@@ -79,6 +83,10 @@ textarea {
 
 .mail-group {
     margin-bottom: 1rem;
+
+}
+#format-group{
+    display: none;
 }
 
 button {
@@ -92,4 +100,8 @@ button {
 a{
     display: flex;
     justify-self: center;
+}
+.error{
+    color: red;
+    display: none;
 }
