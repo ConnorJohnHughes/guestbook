@@ -10,7 +10,7 @@
 </head>
 <body>
     <main>
-        <form id="guestbook-form" action="#" method="get">
+        <form id="guestbook-form" action="submit-form" method="post">
             <h1>Contact Form</h1>
 
             <fieldset id="contact-info">
@@ -55,8 +55,8 @@
             <fieldset id="meet-info">
                 <div id="meet-div">
                     <div class="meet-group">
-                        <label for="meet-dropdown">How did we meet?</label>
-                        <select name="meet-dropdown" id="meet-dropdown">
+                        <label for="meet">How did we meet?</label>
+                        <select name="meet" id="meet" name="meet">
                             <option value="none">Please Select</option>
                             <option value="school">At School</option>
                             <option value="linkedin">Linkedin</option>
@@ -74,25 +74,25 @@
             </fieldset>
 
             <fieldset id="message-area">
-                <label for="message-textarea">Message</label>
-                <textarea id="message-textarea" name="message-textarea"></textarea>
+                <label for="message">Message</label>
+                <textarea id="message" name="message"></textarea>
             </fieldset>
 
             <fieldset id="mailing-list-section">
                 <div id="mailingDiv">
                     <div class="mail-group">
-                        <input type="checkbox" id="mailing-list" name="mailing-list" >
-                        <label for="mailing-list">Please add me to your mailing list</label>
+                        <input type="checkbox" id="mailing" name="mailing" >
+                        <label for="mailing">Please add me to your mailing list</label>
               
                     </div>
 
                     <div id="format-group">
                         <p>Choose an email format:</p>
 
-                        <input type="radio" id="html-radio" name="email-format" value="html">
+                        <input type="radio" id="html-radio" name="format" value="html">
                         <label for="html-radio">HTML</label>
 
-                        <input type="radio" id="text-radio" name="email-format" value="text">
+                        <input type="radio" id="text-radio" name="format" value="text">
                         <label for="text-radio">Text</label>
                     </div>
                 </div>

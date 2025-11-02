@@ -8,8 +8,9 @@ body {
 
 main {
     background-color: white;
-    width: 50%;
-    margin: 5rem 5rem 0 5rem;
+    width: 90%;
+    max-width: 800px;
+    margin: 5rem auto;
     border-radius: 1%;
     padding: 2rem;
     box-shadow: .5rem .5rem gray;
@@ -26,7 +27,7 @@ h1 {
 
 #contact-div {
     display: grid;
-    grid-template-columns: repeat(3, minmax(auto, auto));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 15px;
 }
 
@@ -104,4 +105,19 @@ a{
 .error{
     color: red;
     display: none;
+}
+span{
+    padding-left: 3rem;
+}
+#returnBTN {
+    display: inline-block;
+    background-color: rgb(50, 150, 50);
+    color: white;
+    padding: .3rem 1rem;
+    border-radius: .2rem;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 1rem 3rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.2s ease;
 }

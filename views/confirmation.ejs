@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirmation Page</title>
+    <link rel="stylesheet" href="/styles/styles.css">
+    <script src="/js/guestbook.js" defer></script>
+    <link rel="icon" type="image/png" href="/images/illustration-of-book-icon-free-vector.jpg">
+</head>
+    <body>
+        <main>
+            <h1>Thank you!</h1>
+            <form id="confirm-form" action="#" method="get">
+                <fieldset id="confirm-fielset">
+                    <div id="confirm-div">
+                        <div id="fName-div">
+                            <label for="fName" id="fName">First Name: </label>
+                            <span id="fName"><%=contact.fName%></span>
+                        </div>
+                        <div id="lName-div">
+                            <label for="lName" id="lName">Last Name: </label>
+                            <span id="lName"><%=contact.lName%></span>
+                        </div>
+                        <div id="job-div">
+                            <label for="job" id="job">Job Title: </label>
+                            <span id="job"><%=contact.job%></span>
+                        </div>
+                        <div id="company-div">
+                            <label for="company" id="company">Company: </label>
+                            <span id="company"><%=contact.company%></span>
+                        </div>
+                        <div id="linkedin-div">
+                            <label for="linkedin" id="linkedin">LinkedIn URL: </label>
+                            <span id="linkedin"><%=contact.linkedin%></span>
+                        </div>
+                        <div id="email-div">
+                            <label for="email" id="email">Email Address: </label>
+                            <span id="email"><%=contact.email%></span>
+                        </div>
+                        <div id="meet-dropdown-div">
+                            <label for="meet-dropdown" id="meet-dropdown">Where we met: </label>
+                            <span id="meet-dropdown"><%=contact.meet%></span>
+                        </div>
+                        <div id="other-div">
+                            <label for="other" id="other">If Other: </label>
+                            <span id="other"><%=contact.other%></span>
+                        </div>
+                        <div id="mailing-list-div">
+                            <label for="mailing-list" id="mailing-list">Mailing List: </label>
+                            <span id="mailing-list"><%=contact.mailing%></span>
+                        </div>
+                        <div id="format-div">
+                            <label for="format" id="format">Mailing Format: </label>
+                            <span id="format"><%=contact.format%></span>
+                        </div>
+                        <div id="message-div">
+                            <label for="message" id="message">Message: </label>
+                            <span id="message"><%=contact.message%></span>
+                        </div>
+                    </div>
+                </fieldset>
+
+
+
+                <a href="/" id="returnBTN" >Back to Form</a>
+            </form>
+
+        </main>
+    </body>
+</html>

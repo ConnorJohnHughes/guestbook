@@ -27,14 +27,14 @@ document.getElementById('guestbook-form').onsubmit= () => {
             }
         }
 
-        let meetDropdown = document.getElementById('meet-dropdown').value;
+        let meetDropdown = document.getElementById('meet').value;
 
         if( meetDropdown == "none"){
             document.getElementById('err-dropdown').style.display = "block";
             isValid = false;
         }
 
-        let mailingList = document.getElementById('mailing-list');
+        let mailingList = document.getElementById('mailing');
 
         if(mailingList.checked && !email){
             document.getElementById('err-email').style.display = "block";
@@ -62,12 +62,12 @@ document.getElementById('guestbook-form').onsubmit= () => {
 
 
 }
-    document.getElementById('mailing-list').addEventListener('change', function() {
+    document.getElementById('mailing').addEventListener('change', function() {
     let formatGroup = document.getElementById('format-group');
     formatGroup.style.display = this.checked ? "block" : "none";
     });
 
-    let meetVal = document.getElementById('meet-dropdown');
+    let meetVal = document.getElementById('meet');
     let  otherGroup = document.getElementById('other-group');
 
 
