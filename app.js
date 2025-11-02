@@ -1,7 +1,7 @@
 import express from "express";
 
 const app = express();
-const PORT = 3006;
+const PORT = 3003;
 const contacts = [];
 
 app.set('view engine', 'ejs');
