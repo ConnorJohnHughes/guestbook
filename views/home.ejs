@@ -3,105 +3,114 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Guest Book</title>
+    <title>Portfolio</title>
     <link rel="stylesheet" href="/styles/styles.css">
-    <script src="/js/guestbook.js" defer></script>
-    <link rel="icon" type="image/png" href="/images/illustration-of-book-icon-free-vector.jpg">
+    <link rel="icon" type="image/x-icon" href="images/h-fav.jpg">
 </head>
 <body>
     <main>
-        <form id="guestbook-form" action="submit-form" method="post">
-            <h1>Contact Form</h1>
+        <div class="box">
+                <h1>Connor Hughes</h1>
 
-            <fieldset id="contact-info">
-                <div id="contact-div">
-                    <div class="contact-group">
-                        <label for="fName">First Name</label>
-                        <input type="text" id="fName" name="fName">
-                        <span id="err-fName" class="error" >Missing  First name</span>
-                    </div>
-
-                    <div class="contact-group">
-                        <label for="lName">Last Name</label>
-                        <input type="text" id="lName" name="lName">
-                        <span id="err-lName" class="error" >Missing  First name</span>
-                    </div>
-
-                    <div class="contact-group">
-                        <label for="job">Job Title</label>
-                        <input type="text" id="job" name="job">
-                    </div>
-
-                    <div class="contact-group">
-                        <label for="company">Company</label>
-                        <input type="text" id="company" name="company">
-                    </div>
-
-                    <div class="contact-group">
-                        <label for="linkedin">Linkedin URL</label>
-                        <input type="text" id="linkedin" name="linkedin">
-                        <span id="err-linkedin" class="error" >Needs to start with https://linkedin.com/in/</span>
-                    </div>
-
-                    <div class="contact-group">
-                        <label for="email">Email Address</label>
-                        <input type="email" id="email" name="email">
-                        <span id="err-email" class="error" >Missing Email</span>
-                        <span id="err-email-valid" class="error" >Must be valid email</span>
-                    </div>
+                
+                <div class="profile-pic">
+                    <img src="images/IMG_20250923_201504.jpg" alt="picture of me">
                 </div>
-            </fieldset>
+                <%- include('partials/header') %>
 
-            <fieldset id="meet-info">
-                <div id="meet-div">
-                    <div class="meet-group">
-                        <label for="meet">How did we meet?</label>
-                        <select name="meet" id="meet" name="meet">
-                            <option value="none">Please Select</option>
-                            <option value="school">At School</option>
-                            <option value="linkedin">Linkedin</option>
-                            <option value="passingBy">Passing by</option>
-                            <option value="other">Other</option>
-                        </select>
-                        <span id="err-dropdown" class="error" >**Required**</span>
-                    </div>
-
-                    <div id="other-group">
-                        <label for="other">Other (Please specify)</label>
-                        <input type="text" id="other" name="other">
-                    </div>
+                <div class="contact-info">
+                    <p>hughes.connor@student.greenriver.edu </p>
+                    <p>(253)-339-6373</p>
                 </div>
-            </fieldset>
-
-            <fieldset id="message-area">
-                <label for="message">Message</label>
-                <textarea id="message" name="message"></textarea>
-            </fieldset>
-
-            <fieldset id="mailing-list-section">
-                <div id="mailingDiv">
-                    <div class="mail-group">
-                        <input type="checkbox" id="mailing" name="mailing" >
-                        <label for="mailing">Please add me to your mailing list</label>
-              
-                    </div>
-
-                    <div id="format-group">
-                        <p>Choose an email format:</p>
-
-                        <input type="radio" id="html-radio" name="format" value="html">
-                        <label for="html-radio">HTML</label>
-
-                        <input type="radio" id="text-radio" name="format" value="text">
-                        <label for="text-radio">Text</label>
-                    </div>
+   
+                <div class="summary">
+                    <h2>About Me</h2>
+                        <p>A motivated future software engineer with a passion for problem solving </p>
                 </div>
-            </fieldset>
 
-            <button id="submit">Submit</button>
-        </form>
+                <div class="education"> 
 
-        <a href="https://github.com/ConnorJohnHughes/guestbook.git">Github</a>
+                    <h3>Education</h3>
+
+                    <div class="schools">
+
+                    <div id="grc">            
+                        <p>Green River College<br> Auburn, Wa </p><p> 2025 - Present</p>
+                    </div>
+                    <div id="grc-info">
+                        <p>Bachelor of Applied Science, <br>Expected June 2027 <br>
+                        Major: Software Development <br>
+                
+                        </p>
+                    </div>
+
+                    <div id="bates">            
+                        <p>Bates Technical College<br> Tacoma, Wa </p><p> 2024 - 2025</p>
+                    </div>
+                    <div id="bates-info">
+                        <p>Associate of Applied Science,<br> Graduated June 2025 <br>
+                        Major: Software Development <br>
+                    
+                        </p>
+                    </div>
+
+                    </div>
+                        <div id="edu-lists">
+                            <ul class="left-list">
+                                <li>Object Oriented Programming</li>
+                                <li>Data Structures</li>
+                                <li>Web Development</li>
+                                <li>Database Systems</li>
+                            </ul>
+                            <ul class="right-list">
+                                <li>Software Engineering Principles</li>
+                                <li>Github Procedures</li>
+                                <li>Full Stack Development</li>
+                                <li>APIs and Cloud Services</li>
+                            </ul>
+                        </div>
+                    </div>
+                    </div>
+
+                <div class="skills">
+                    <h4>Skills and Certifications</h4>
+                    <div id="skills-info">
+                        <div id="skills-list">
+                            <ul>
+                                <li>Languages: Java, JavaScript, SQL, C#, Python</li>
+                                <li>Web: HTML/CSS, JSON</li>
+                                <li>Tools: Git, Jupyter, Node.js</li>
+                                <li>Github: Repos, Pages</li>
+                            </ul>
+                            <ul >
+                                <li>React Native</li>
+                                <li>Database Servers</li>
+                                <li>Unity</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>   
+
+
+                <div id="experience">
+                    <h5>Experience</h5>
+                    <div id="experience-year">            
+                        <p><strong>Rust to Gold Dust Bullies</strong>- Tacoma, Wa </p><p> 2018 - Present</p>
+                    </div>
+                    <div id="experience-info">
+                        Business Partner:
+                            <ul id="experience-list">
+                                <li>I help bring beautiful, happy dogs into loving homes by carefully 
+                                    breeding and raising them with care and responsibility.</li>
+                                <li>Business partner for the kennel</li>
+                                <li>I took care of the dogs well being</li>
+                            </ul>
+                    </div>
+
+                    </div>
+
+        
     </main>
+    
 </body>
 </html>

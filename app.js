@@ -14,16 +14,17 @@ app.use(express.static('public'));
 
 
 app.get('/', (req,res) => {
-    // res.sendFile(`${import.meta.dirname}/views/home.html`); 
     res.render('home');
 });
+app.get('/contact', (req,res) => {
+    res.render('contact');
+});
 app.get('/confirm', (req,res) => {
-    // res.sendFile(`${import.meta.dirname}/views/confirmation.html`); 
     res.render('confirmation');
 });
 app.get('/admin', (req,res) => {
 
-    res.send(contacts);
+    res.render('admin', {contacts});
 });
 
 app.listen(PORT,() =>{
@@ -32,7 +33,10 @@ app.listen(PORT,() =>{
 
 app.post('/submit-form', (req,res) => {
     const contact = req.body;
+    
     // console.log(contact);
+
+    contact.timestamp = new Date().toLocaleDateString();
 
     contacts.push(contact);
 

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guest Book</title>
+    <link rel="stylesheet" href="/styles/styles.css">
+    <script src="/js/guestbook.js" defer></script>
+    <link rel="icon" type="image/png" href="/images/illustration-of-book-icon-free-vector.jpg">
+</head>
+<body>
+    <main>
+        <form id="guestbook-form" action="submit-form" method="post">
+            <h1>Contact Form</h1>
+            <%- include('partials/header') %>
+            <fieldset id="contact-info">
+                <div id="contact-div">
+                    <div class="contact-group">
+                        <label for="fName">First Name</label>
+                        <input type="text" id="fName" name="fName">
+                        <span id="err-fName" class="error" >Missing  First name</span>
+                    </div>
+
+                    <div class="contact-group">
+                        <label for="lName">Last Name</label>
+                        <input type="text" id="lName" name="lName">
+                        <span id="err-lName" class="error" >Missing  First name</span>
+                    </div>
+
+                    <div class="contact-group">
+                        <label for="job">Job Title</label>
+                        <input type="text" id="job" name="job">
+                    </div>
+
+                    <div class="contact-group">
+                        <label for="company">Company</label>
+                        <input type="text" id="company" name="company">
+                    </div>
+
+                    <div class="contact-group">
+                        <label for="linkedin">Linkedin URL</label>
+                        <input type="text" id="linkedin" name="linkedin">
+                        <span id="err-linkedin" class="error" >Needs to start with https://linkedin.com/in/</span>
+                    </div>
+
+                    <div class="contact-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email">
+                        <span id="err-email" class="error" >Missing Email</span>
+                        <span id="err-email-valid" class="error" >Must be valid email</span>
+                    </div>
+                </div>
+            </fieldset>
+
+            <fieldset id="meet-info">
+                <div id="meet-div">
+                    <div class="meet-group">
+                        <label for="meet">How did we meet?</label>
+                        <select name="meet" id="meet" name="meet">
+                            <option value="none">Please Select</option>
+                            <option value="school">At School</option>
+                            <option value="linkedin">Linkedin</option>
+                            <option value="passingBy">Passing by</option>
+                            <option value="other">Other</option>
+                        </select>
+                        <span id="err-dropdown" class="error" >**Required**</span>
+                    </div>
+
+                    <div id="other-group">
+                        <label for="other">Other (Please specify)</label>
+                        <input type="text" id="other" name="other">
+                    </div>
+                </div>
+            </fieldset>
+
+            <fieldset id="message-area">
+                <label for="message">Message</label>
+                <textarea id="message" name="message"></textarea>
+            </fieldset>
+
+            <fieldset id="mailing-list-section">
+                <div id="mailingDiv">
+                    <div class="mail-group">
+                        <input type="checkbox" id="mailing" name="mailing" >
+                        <label for="mailing">Please add me to your mailing list</label>
+              
+                    </div>
+
+                    <div id="format-group">
+                        <p>Choose an email format:</p>
+
+                        <input type="radio" id="html-radio" name="format" value="html">
+                        <label for="html-radio">HTML</label>
+
+                        <input type="radio" id="text-radio" name="format" value="text">
+                        <label for="text-radio">Text</label>
+                    </div>
+                </div>
+            </fieldset>
+
+            <button id="submit">Submit</button>
+        </form>
+
+    </main>
+</body>
+</html>

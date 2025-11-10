@@ -1,11 +1,73 @@
-<!-- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin Page</title>
+
+    <script src="//code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="//cdn.datatables.net/2.3.4/js/dataTables.min.js"></script>
+
+
+    <link rel="stylesheet" href="//cdn.datatables.net/2.3.4/css/dataTables.dataTables.min.css">
+
+    <link rel="stylesheet" href="/styles/styles.css">
+
 </head>
-<body>
-    
+<body>   
+    <main>
+        <div id="admin">
+        <h1>Admin Page</h1>
+        <%- include('partials/header') %>
+        <table id="contact-table" class="display">
+            <thead>
+                <tr>
+                    <th>Date/Time</th>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Job Title</th>
+                    <th>Company</th>
+                    <th>LinkedIn URL</th>
+                    <th>Email</th>
+                    <th>How did we meet?</th>
+                    <th>Other</th>
+                    <th> Mailing List?</th>
+                    <th>Message</th>
+                    <th>Email Format</th>
+                    
+                </tr>
+            </thead>
+            <tbody>
+                <% contacts.forEach(contact => { %>
+
+                <tr>
+                    <td><%= contact.timestamp %></td>
+                    <td><%= contact.fName %> </td>
+                    <td><%= contact.lName %></td>
+                    <td><%= contact.job %></td>
+                    <td><%= contact.company %></td>
+                    <td><%= contact.linkedin %></td>
+                    <td><%= contact.email %></td>
+                    <td><%= contact.meet %></td>
+                    <td><%= contact.other %></td>
+                    <td><%= contact.mailing %></td>
+                    <td><%= contact.message %></td>
+                    <td><%= contact.format %></td>
+                    
+                    
+                </tr>
+
+                <% }); %>
+
+            </tbody>
+        </table>
+        </div>
+    </main>
+        <script defer>
+        let table = new DataTable('#contact-table', {
+            scrollX: true,
+            scrollY: 200
+        });
+    </script>
 </body>
-</html> -->
+</html>
