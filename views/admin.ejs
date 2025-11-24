@@ -42,17 +42,17 @@
 
                 <tr>
                     <td><%= contact.timestamp %></td>
-                    <td><%= contact.fName %> </td>
-                    <td><%= contact.lName %></td>
-                    <td><%= contact.job %></td>
+                    <td><%= contact.firstName %> </td>
+                    <td><%= contact.lastName %></td>
+                    <td><%= contact.jobTitle %></td>
                     <td><%= contact.company %></td>
-                    <td><%= contact.linkedin %></td>
+                    <td><%= contact.linkedIn %></td>
                     <td><%= contact.email %></td>
-                    <td><%= contact.meet %></td>
+                    <td><%= contact.meetWhere %></td>
                     <td><%= contact.other %></td>
-                    <td><%= contact.mailing %></td>
+                    <td><%= contact.mailingList %></td>
                     <td><%= contact.message %></td>
-                    <td><%= contact.format %></td>
+                    <td><%= contact.mailingFormat %></td>
                     
                     
                 </tr>
@@ -66,7 +66,7 @@
         <script defer>
         let table = new DataTable('#contact-table', {
             scrollX: true,
-            scrollY: 200
+            scrollY: true
         });
     </script>
 </body>
